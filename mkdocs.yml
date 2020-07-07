@@ -1,4 +1,31 @@
 site_name: My Docs
 
+# Documentation and theme
 theme:
-  name: material
+  name: "material"
+  language: "en"
+  palette:
+    primary: "indigo"
+    accent: "indigo"
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+
+extra_css:
+  - "stylesheets/code-tabs.css"
+
+extra_javascript:
+  - "javascripts/main.js"
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: False
+      guess_lang: False
+  - toc:
+      permalink: True
+  - markdown_fenced_code_tabs:
+      single_block_as_tab: False
+      active_class: "active"
+      template: "default"
