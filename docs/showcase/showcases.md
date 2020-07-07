@@ -172,7 +172,7 @@ gameServer.define("battle_woods", BattleRoom, { map: "woods" });
 ```
 
 !!! Tip "Defining the same room handler multiple times"
-You may define the same room handler multiple times with different `options`. When [Room#onCreate()](/server/room/#oncreate-options) is called, the `options` will contain the merged values you specified on [Server#define()](/server/api/#define-name-string-handler-room-options-any) + the options provided when the room is created.
+    You may define the same room handler multiple times with different `options`. When [Room#onCreate()](/server/room/#oncreate-options) is called, the `options` will contain the merged values you specified on [Server#define()](/server/api/#define-name-string-handler-room-options-any) + the options provided when the room is created.
 
 ---
 
@@ -293,7 +293,7 @@ gameServer
 ```
 
 !!! Warning
-It's completely discouraged to manipulate a room's state through these events. Use the [abstract methods](/server/room/#abstract-methods) in your room handler instead.
+    It's completely discouraged to manipulate a room's state through these events. Use the [abstract methods](/server/room/#abstract-methods) in your room handler instead.
 
 ### `attach (options: any)`
 
