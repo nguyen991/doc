@@ -21,6 +21,9 @@ jobs:
     steps:
     - name: Checkout master
       uses: actions/checkout@v1
+    
+    - name: Install enviroment
+      run: pip install -r requirements.txt
 
     - name: Deploy docs
       uses: mhausenblas/mkdocs-deploy-gh-pages@master
